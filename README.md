@@ -57,6 +57,10 @@ courtesy of;
 - Build and run your application using Docker containers:
     
     ```bash
+
+    git clone https://github.com/docker/buildx.git && cd buildx
+    make install
+    
     docker build -t netflix .
     docker run -d --name netflix -p 8081:80 netflix:latest
     
